@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_NAME=pizzaria
+      - DB_USER=root
+      - DB_PASSWORD=
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_DATABASE: pizzaria
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
