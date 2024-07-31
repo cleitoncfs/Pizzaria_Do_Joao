@@ -19,4 +19,17 @@ COPY composer.json ./
 # Instale dependências do Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --verbose
 
-# Copie o restante do código da aplicação para o diret
+# Copie o restante do código da aplicação para o diretório do Apache
+COPY . .
+
+# Ajuste permissões
+RUN chown -R www-data:www-data /var/www/html
+
+# Exponha a porta 80
+EXPOSE 80
+
+# Comando para iniciar o Apache
+CMD ["apache2-foreground"]
+
+# Copie o arquivo de configuração do Apache
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
