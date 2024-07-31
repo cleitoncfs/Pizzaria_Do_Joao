@@ -13,20 +13,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Defina o diretório de trabalho
 WORKDIR /var/www/html/
 
-# Copie o arquivo composer.json e composer.lock para o diretório de trabalho
-COPY composer.json composer.lock ./
+# Copie o arquivo composer.json para o diretório de trabalho
+COPY composer.json ./
 
 # Instale dependências do Composer
-RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --verbose
 
-# Copie o restante do código da aplicação para o diretório do Apache
-COPY . .
-
-# Ajuste permissões, se necessário
-RUN chown -R www-data:www-data /var/www/html
-
-# Exponha a porta 80
-EXPOSE 80
-
-# Comando para iniciar o Apache
-CMD ["apache2-foreground"]
+# Copie o restante do código da aplicação para o diret
