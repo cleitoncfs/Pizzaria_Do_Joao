@@ -1,29 +1,79 @@
-<footer style="display: flex; flex-direction: column; align-items: center;">
-    <div style="color: white; text-align: center; margin-bottom: 10px;">Pizzaria do João &copy; 2024</div>
+<footer>
+    <style>
+        footer {
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+            background: linear-gradient(to right, #111, #222);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+        }
 
-    <div style="display: flex; justify-content: center;">
-        <a href="https://www.facebook.com/" target="_blank" style="color: white; margin: 0 10px;"><i
-                class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank" style="color: white; margin: 0 10px;"><i
-                class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/" target="_blank" style="color: white; margin: 0 10px;"><i
-                class="bi bi-youtube"></i></a>
-        <a href="https://twitter.com/home" target="_blank" style="color: white; margin: 0 10px;"><i
-                class="bi bi-twitter-x"></i></a>
+        footer p {
+            font-size: 0.9em;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+
+        footer a i {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 8px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        footer a:hover i {
+            transform: scale(1.2);
+            color: #ffcc00;
+        }
+
+        footer a span {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            footer {
+                padding: 15px;
+            }
+
+            footer p {
+                font-size: 0.85em;
+            }
+
+            footer a i {
+                font-size: 20px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+
+    <p>
+        &copy; <?php echo date("Y"); ?> Pizzaria do João – Todos os direitos reservados
+    </p>
+
+    <p>
+        Desenvolvido por 
+        <a 
+            href="https://portfolio-cleiton.netlify.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Portfólio do desenvolvedor (abre em nova aba)"
+            style="color: #fff;"
+        >
+            <span>Cleiton Santos</span>
+        </a>
+    </p>
+
+    <div>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://twitter.com/home" target="_blank"><i class="bi bi-twitter-x"></i></a>
     </div>
 </footer>
-
-
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-</script>
-</body>
-
-</html>

@@ -4,10 +4,13 @@ include("process/conn.php");
 $msg = isset($_SESSION["msg"]) ? $_SESSION["msg"] : "";
 $status = isset($_SESSION["status"]) ? $_SESSION["status"] : "";
 
-if (!empty($msg)) {
+if (!empty($_SESSION["msg"])) {
+    $msg = $_SESSION["msg"];
+    $status = $_SESSION["status"];
     $_SESSION["msg"] = "";
     $_SESSION["status"] = "";
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +25,7 @@ if (!empty($msg)) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
