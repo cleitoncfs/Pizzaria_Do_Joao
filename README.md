@@ -47,7 +47,10 @@ Página de pedidos com opções de personalização de pizza: borda, massa e sab
    
 2. Configure o servidor local (ex: XAMPP ou WAMP)
 
-3. Importe o banco de dados MySQL (arquivo .sql se disponível)
+3. Importe o banco de dados MySQL:
+  - Abra o phpMyAdmin
+  - Crie um banco de dados chamado pizzaria
+  - Importe o arquivo pizzaria.sql disponível no repositório
 
 4. Acesse o projeto via navegador:
    http://localhost/Pizzaria_Do_Joao
@@ -59,6 +62,7 @@ Projeto desenvolvido como parte da Formação Profissional em Web Developer – 
 
 📬 Contato
 Cleiton CFS – GitHub
+
 
 
 
