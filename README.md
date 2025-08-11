@@ -43,45 +43,6 @@ Página de pedidos com opções de personalização de pizza: borda, massa e sab
 ## 🛠️ Como Executar
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/cleitoncfs/Pizzaria_Do_Joao.git
-
-# Pizzaria Do João
-
-**Projeto Final da Formação Profissional em Web Development**  
-*Master D – Portugal*
-
----
-
-## 🧾 Descrição
-
-Este projeto representa o trabalho final da formação em Web Development, com foco na construção de um sistema completo para uma pizzaria fictícia. A aplicação foi desenvolvida utilizando tecnologias fundamentais da web, com integração entre front-end e back-end.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- PHP
-- MySQL
-- JavaScript
-- HTML5
-- CSS3
-
----
-
-## 📌 Funcionalidades
-
-- Cadastro e gerenciamento de pedidos
-- Interface interativa para seleção de pizzas
-- Sistema de login e autenticação
-- Integração com banco de dados MySQL
-- Layout responsivo e estilizado
-
----
-
-## 🛠️ Como Executar
-
-1. Clone o repositório:
    git clone https://github.com/cleitoncfs/Pizzaria_Do_Joao.git
    
 2. Configure o servidor local (ex: XAMPP ou WAMP)
@@ -98,6 +59,7 @@ Projeto desenvolvido como parte da Formação Profissional em Web Developer – 
 
 📬 Contato
 Cleiton CFS – GitHub
+
 
 
 
